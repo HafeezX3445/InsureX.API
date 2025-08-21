@@ -1,6 +1,10 @@
+using InsureX.API.Repositories;
+using InsureX.API.Repositories.IRepos;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<IPremiumRepository, PremiumRepository>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
