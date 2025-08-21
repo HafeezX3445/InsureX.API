@@ -7,5 +7,6 @@ namespace InsureX.API.Controllers
     [ApiController]
     public class HealthInsuranceController : ControllerBase
     {
+        // controller 1
     }
 }
