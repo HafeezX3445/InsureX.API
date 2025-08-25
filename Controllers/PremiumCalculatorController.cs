@@ -1,11 +1,10 @@
 ﻿using InsureX.API.Models;
 using InsureX.API.Repositories.IRepos;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InsureX.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/PremiumCalculator")]
     [ApiController]
     public class PremiumCalculatorController : ControllerBase
     {

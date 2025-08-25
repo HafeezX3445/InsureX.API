@@ -7,6 +7,10 @@
         public int? SpouseAge { get; set; }
         public int? SonAge { get; set; }
         public int? DaughterAge { get; set; }
+        public int? MotherAge { get; set; }
+        public int? FatherAge { get; set; }
+        public int? FatherInLawAge { get; set; }
+        public int? MotherInLawAge { get; set; }
 
         public string Pincode { get; set; }
         public string PhoneNumber { get; set; } // mandatory

@@ -20,6 +20,18 @@ namespace InsureX.API.Repositories
             if (request.DaughterAge.HasValue)
                 response.Breakdown["Daughter"] = CalculatePersonPremium(request.DaughterAge.Value, false);
 
+            if (request.MotherAge.HasValue)
+                response.Breakdown["Mother"] = CalculatePersonPremium(request.MotherAge.Value, false);
+
+            if (request.FatherAge.HasValue)
+                response.Breakdown["Father"] = CalculatePersonPremium(request.FatherAge.Value, true);
+
+            if (request.MotherInLawAge.HasValue)
+                response.Breakdown["MotherInLaw"] = CalculatePersonPremium(request.MotherInLawAge.Value, false);
+
+            if (request.FatherInLawAge.HasValue)
+                response.Breakdown["FatherInLaw"] = CalculatePersonPremium(request.FatherInLawAge.Value, true);
+
             response.TotalPremium = response.Breakdown.Values.Sum();
 
             return response;

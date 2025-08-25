@@ -13,3 +13,8 @@ obj/
 # Environment files
 .env
 appsettings.*.json
+
+bin/
+obj/
+.vs/
+TestResults/
