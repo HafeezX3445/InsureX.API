@@ -12,8 +12,8 @@ namespace InsureX.Tests.Repositories
         {
             _repository = new PremiumRepository();
         }
-
-        [Fact]
+  
+        [Fact] 
         public void CalculatePremium_ShouldReturnCorrectTotal_WhenOnlySelf()
         {
             var request = new PremiumRequest
