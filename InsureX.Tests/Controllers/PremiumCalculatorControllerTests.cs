@@ -12,7 +12,7 @@ namespace InsureX.Tests.Controllers
         private readonly Mock<IPremiumRepository> _mockRepo;
         private readonly PremiumCalculatorController _controller;
 
-        public PremiumCalculatorControllerTests()
+        public PremiumCalculatorControllerTests() 
         {
             _mockRepo = new Mock<IPremiumRepository>();
             _controller = new PremiumCalculatorController(_mockRepo.Object);
